@@ -1,0 +1,14 @@
+# Keep out of the repo / deploy: working files in the project root
+# (original screenshots, phone photos, palette image, notes).
+# The site's own images live in images/.
+/*.png
+/*.PNG
+/*.jpg
+/*.jpeg
+TEMPLATE-GUIDE.md
+_*.html
+desktop.ini
+.DS_Store
+
+# Private backup of the original site + scrub record (never upload)
+_private/

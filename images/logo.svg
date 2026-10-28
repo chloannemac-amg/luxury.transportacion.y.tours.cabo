@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Marea — Transporte privado y tours">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6F5FC"/>
+      <stop offset="1" stop-color="#B7DDF0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#sky)" stroke="#FFFFFF" stroke-width="5"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#11295D" stroke-opacity=".18" stroke-width="1.5"/>
+  <!-- sun -->
+  <circle cx="132" cy="58" r="13" fill="#FFFFFF" fill-opacity=".8"/>
+  <!-- SUV silhouette -->
+  <g transform="translate(52 56) scale(1.5)">
+    <path fill="#11295D" d="M2 20v-6q0-3 3-3.5l9-1 6-6q1.5-1.5 4-1.5h20q3 0 5 2l6 5.5 5 1q3 .7 3 3.5v6q0 1-1 1h-7a6 6 0 0 0-12 0H22a6 6 0 0 0-12 0H3q-1 0-1-1z"/>
+    <path fill="#CFE6F5" d="M22 4.5h11v5H17zM35.5 4.5H44q2 0 3.5 1.5L51 9.5H35.5z"/>
+    <circle fill="#11295D" cx="16" cy="21" r="4.6"/>
+    <circle fill="#11295D" cx="49" cy="21" r="4.6"/>
+    <circle fill="#CFE6F5" cx="16" cy="21" r="1.8"/>
+    <circle fill="#CFE6F5" cx="49" cy="21" r="1.8"/>
+  </g>
+  <!-- dashed wave: the site's route motif -->
+  <path d="M40 104 q15 -8 30 0 t30 0 t30 0 t30 0" fill="none" stroke="#0187F5" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 6"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="31" font-weight="700" letter-spacing="5" fill="#11295D">MAREA</text>
+  <text x="100" y="162" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="9.5" letter-spacing="2.4" fill="#11295D">TRANSPORTE · TOURS</text>
+</svg>

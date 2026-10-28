@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marea | Transporte privado y tours en Los Cabos</title>
+  <meta name="description" content="Transporte privado de lujo en Los Cabos: traslados al aeropuerto, SUVs de lujo, vans para grupos, autobuses, bodas, eventos y tours en Baja California Sur.">
+  <meta name="theme-color" content="#0E1219">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <meta property="og:title" content="Marea — Transporte privado y tours en Los Cabos">
+  <meta property="og:description" content="Su experiencia en Los Cabos comienza aquí. Transporte privado, grupos, bodas y tours.">
+  <meta property="og:image" content="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Icon sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c1.9.7 3.1 2.5 3.5 5.2"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5V12l2.2-5h13.6L21 12v4.5"/><path d="M3 12h18M3 16.5h2M19 16.5h2M9 16.5h6"/><circle cx="7" cy="16.5" r="2"/><circle cx="17" cy="16.5" r="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+    <symbol id="i-seat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h6a2 2 0 0 1 2 2v8H7z"/><path d="M5 13h12a2 2 0 0 1 2 2v2H5zM7 17v4M17 17v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.050 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Marea">
+      <img src="images/logo.svg" alt="Logo de Marea">
+      <span class="brand-name">Marea<small data-i18n="brand.sub">Transporte y Tours</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#flota" data-i18n="nav.fleet">Flota</a>
+      <a href="#bodas" data-i18n="nav.weddings">Bodas</a>
+      <a href="#tours" data-i18n="nav.tours">Tours</a>
+      <a href="#resenas" data-i18n="nav.reviews">Reseñas</a>
+      <a href="#preguntas" data-i18n="nav.faq">Preguntas</a>
+      <a href="#cotizar" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-accent" href="#cotizar" data-i18n="cta.quoteShort">Cotizar</a>
+      <button class="menu-btn" type="button" aria-label="Menú" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <!-- PHOTO: images/hero.jpg — landscape, 1920px+ wide -->
+  <div class="photo hero-bg" data-photo="images/hero.jpg" data-label="FOTO PRINCIPAL · 1920 × 1080"></div>
+  <svg class="hero-route" viewBox="0 0 600 400" fill="none" aria-hidden="true">
+    <path d="M10 380 C 120 300, 80 180, 220 160 S 420 220, 470 110 S 560 30, 585 22" stroke="#00D3F3" stroke-width="2" stroke-dasharray="8 10"/>
+    <circle cx="585" cy="22" r="6" fill="#00D3F3"/>
+  </svg>
+  <div class="wrap">
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Transporte privado · Servicio para grupos · Tours en Los Cabos</p>
+      <h1 data-i18n="hero.title">Su experiencia en Los Cabos <em>comienza aquí.</em></h1>
+      <p class="lead" data-i18n="hero.p1">Desde su llegada al aeropuerto hasta los momentos que recordará para siempre, disfrute de un servicio de transporte pensado para usted, su grupo y sus planes en Los Cabos.</p>
+      <p data-i18n="hero.p2">Ya sea que viaje a su hotel, quiera descubrir Baja California Sur, esté organizando una salida con amigos o preparando una boda de destino, le ayudamos a que llegar a cada lugar sea una parte agradable de la experiencia.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="#cotizar" data-i18n="hero.btn1">Cotice su transporte</a>
+        <a class="btn btn-outline" href="#servicios" data-i18n="hero.btn2">Conozca nuestros servicios</a>
+      </div>
+      <ul class="hero-tags">
+        <li data-i18n="tag.airport">Traslados al aeropuerto</li>
+        <li data-i18n="tag.suv">SUVs de lujo</li>
+        <li data-i18n="tag.vans">Vans para grupos</li>
+        <li data-i18n="tag.events">Transporte para eventos</li>
+        <li data-i18n="tag.tours">Tours y excursiones</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SU VIAJE, A SU MANERA ================= -->
+<section class="bg-cream" id="su-viaje">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="intro.eyebrow">Su viaje, a su manera</p>
+      <h2 data-i18n="intro.title">Disfrute más de Los Cabos. Dedique menos tiempo a organizar sus traslados.</h2>
+      <p data-i18n="intro.p1">Ya planeó sus vacaciones, reservó su hospedaje y reunió a las personas con las que quiere compartir el viaje. Ahora, moverse de un lugar a otro debería ser la parte sencilla.</p>
+      <p data-i18n="intro.p2">Contamos con opciones de transporte para diferentes tamaños de grupo y ocasiones, para que pueda dedicar más tiempo a disfrutar de su estancia y menos a coordinar la logística.</p>
+
+      <div class="pillars">
+        <div class="pillar">
+          <span class="icon"><svg><use href="#i-users"/></svg></span>
+          <div>
+            <h3 data-i18n="intro.p1t">Viajen juntos.</h3>
+            <p data-i18n="intro.p1d">Coordine los traslados de su grupo desde el aeropuerto hasta el hotel, las actividades y los eventos que tienen planeados.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="icon"><svg><use href="#i-car"/></svg></span>
+          <div>
+            <h3 data-i18n="intro.p2t">Elija el espacio que necesita.</h3>
+            <p data-i18n="intro.p2d">Desde SUVs privadas hasta vans para pasajeros y autobuses turísticos, le ayudamos a encontrar una opción adecuada para su grupo.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <span class="icon"><svg><use href="#i-heart"/></svg></span>
+          <div>
+            <h3 data-i18n="intro.p3t">Disfrute los momentos importantes.</h3>
+            <p data-i18n="intro.p3d">Ya sea un viaje familiar, una aventura con amigos o el día de su boda, queremos que el transporte se adapte a la experiencia que está organizando.</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="#flota" data-i18n="intro.btn">Encuentre el transporte ideal</a>
+    </div>
+
+    <div class="photo-stack reveal">
+      <div class="photo tall" data-photo="images/intro.jpg" data-label="FOTO · VEHÍCULO / CLIENTES · 4:5"></div>
+      <div class="photo small" data-photo="images/intro-detail.jpg" data-label="FOTO · DETALLE · 1:1"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section class="bg-white" id="servicios">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="services.eyebrow">Nuestros servicios</p>
+      <h2 data-i18n="services.title">Un destino. Muchas formas de disfrutarlo.</h2>
+      <p class="lead" data-i18n="services.intro">Desde su llegada al aeropuerto hasta su última salida en Baja California Sur, encuentre opciones de transporte para acompañarle durante su estancia.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <div class="photo" style="background-position: 70% 60%" data-photo="images/service-airport.jpg" data-label="FOTO · AEROPUERTO"></div>
+        <div class="service-body">
+          <span class="service-num">01</span>
+          <h3 data-i18n="s1.title">Traslados al aeropuerto</h3>
+          <p data-i18n="s1.desc">Comience sus vacaciones con su transporte organizado. Coordine su traslado desde el aeropuerto hasta su hotel, resort, villa o alojamiento vacacional.</p>
+          <a class="text-link" href="#cotizar" data-service="airport" data-i18n="s1.btn">Cotizar traslado al aeropuerto</a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="photo" data-photo="images/service-hotel.jpg" data-label="FOTO · HOTEL / RESORT"></div>
+        <div class="service-body">
+          <span class="service-num">02</span>
+          <h3 data-i18n="s2.title">Transporte a hoteles y resorts</h3>
+          <p data-i18n="s2.desc">¿Va a cenar, cambiar de alojamiento o visitar distintos lugares durante su estancia? Solicite transporte de acuerdo con su itinerario.</p>
+          <a class="text-link" href="#cotizar" data-service="hotel" data-i18n="s2.btn">Organizar mi traslado</a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="photo" style="background-position: center 55%" data-photo="images/service-groups.jpg" data-label="FOTO · GRUPOS"></div>
+        <div class="service-body">
+          <span class="service-num">03</span>
+          <h3 data-i18n="s3.title">Transporte para grupos</h3>
+          <p data-i18n="s3.desc">¿Viaja con familiares, amigos, compañeros de trabajo o un grupo grande? Conozca nuestras opciones de transporte para que todos puedan viajar de acuerdo con sus planes.</p>
+          <a class="text-link" href="#cotizar" data-service="groups" data-i18n="s3.btn">Cotizar transporte para grupos</a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="photo wide" data-photo="images/service-tours.jpg" data-label="FOTO · TOURS / EXCURSIONES"></div>
+        <div class="service-body">
+          <span class="service-num">04</span>
+          <h3 data-i18n="s4.title">Tours y excursiones</h3>
+          <p data-i18n="s4.desc">Descubra más de Baja California Sur. Organice transporte para excursiones, recorridos, días de playa y actividades en Los Cabos.</p>
+          <a class="text-link" href="#tours" data-i18n="s4.btn">Explorar opciones de tours</a>
+        </div>
+      </article>
+      <article class="service-card reveal">
+        <div class="photo wide" data-photo="images/service-weddings.jpg" data-label="FOTO · BODAS / EVENTOS"></div>
+        <div class="service-body">
+          <span class="service-num">05</span>
+          <h3 data-i18n="s5.title">Bodas y eventos especiales</h3>
+          <p data-i18n="s5.desc">Desde las llegadas de sus invitados hasta los traslados entre la ceremonia y la recepción, le ayudamos a organizar el transporte para las personas más importantes de su celebración.</p>
+          <a class="text-link" href="#bodas" data-i18n="s5.btn">Planear transporte para mi boda</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLOTA ================= -->
+<section class="dark" id="flota">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="fleet.eyebrow">Encuentre el vehículo ideal</p>
+      <h2 data-i18n="fleet.title">El transporte adecuado para su grupo.</h2>
+      <p class="lead" data-i18n="fleet.intro">Cada viaje es diferente. Por eso, ofrecemos opciones para escapadas, vacaciones familiares, celebraciones y salidas en grupo.</p>
+    </div>
+
+    <div class="fleet-grid">
+      <article class="vehicle reveal">
+        <div class="photo" style="background-position: center 60%" data-photo="images/fleet-suv.jpg" data-label="FOTO · SUV DE LUJO"></div>
+        <div class="vehicle-body">
+          <span class="vehicle-tag" data-i18n="v1.tag">Parejas y familias</span>
+          <h3 data-i18n="v1.title">SUVs de lujo</h3>
+          <p class="tagline" data-i18n="v1.tagline">Privacidad, comodidad y libertad para viajar.</p>
+          <p data-i18n="v1.p1">Una excelente opción para parejas, familias y grupos pequeños que buscan una forma privada de trasladarse por Los Cabos.</p>
+          <p class="note" data-i18n="v1.p2">La capacidad final de pasajeros y equipaje se confirma al reservar.</p>
+          <span class="grow"></span>
+          <a class="btn btn-outline" href="#cotizar" data-service="suv" data-i18n="v1.btn">Cotizar una SUV</a>
+        </div>
+      </article>
+      <article class="vehicle reveal">
+        <div class="photo" data-photo="images/fleet-van.jpg" data-label="FOTO · VAN PARA PASAJEROS"></div>
+        <div class="vehicle-body">
+          <span class="vehicle-tag" data-i18n="v2.tag">Familias y grupos</span>
+          <h3 data-i18n="v2.title">Vans para pasajeros</h3>
+          <p class="tagline" data-i18n="v2.tagline">Todos juntos, desde el primer traslado.</p>
+          <p data-i18n="v2.p1">¿Viaja con familiares, amigos o un grupo de invitados? Las vans son una alternativa práctica para organizar traslados entre el aeropuerto, los hoteles, las actividades y los eventos.</p>
+          <span class="grow"></span>
+          <a class="btn btn-outline" href="#cotizar" data-service="van" data-i18n="v2.btn">Cotizar una van</a>
+        </div>
+      </article>
+      <article class="vehicle reveal">
+        <div class="photo" style="background-position: 70% 45%" data-photo="images/fleet-bus.jpg" data-label="FOTO · AUTOBÚS TURÍSTICO"></div>
+        <div class="vehicle-body">
+          <span class="vehicle-tag" data-i18n="v3.tag">Grupos grandes</span>
+          <h3 data-i18n="v3.title">Autobuses para grupos</h3>
+          <p class="tagline" data-i18n="v3.tagline">Grandes planes necesitan espacio para viajar.</p>
+          <p data-i18n="v3.p1">Para grupos numerosos y salidas organizadas, pregunte por nuestro servicio de autobús turístico para excursiones, eventos y recorridos por Los Cabos.</p>
+          <span class="grow"></span>
+          <a class="btn btn-outline" href="#cotizar" data-service="bus" data-i18n="v3.btn">Cotizar transporte para grupos grandes</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BODAS ================= -->
+<section class="bg-cream" id="bodas">
+  <div class="wrap split">
+    <div class="wedding-photos reveal">
+      <div class="photo tall" data-photo="images/wedding-1.jpg" data-label="FOTO · BODA · 4:5"></div>
+      <div class="photo tall" data-photo="images/wedding-2.jpg" data-label="FOTO · INVITADOS · 4:5"></div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="wed.eyebrow">Bodas y celebraciones</p>
+      <h2 data-i18n="wed.title">Su boda es para celebrar. Nosotros le ayudamos a coordinar cómo llegar.</h2>
+      <p data-i18n="wed.p1">Una boda de destino reúne a personas, lugares y momentos muy especiales. Organizar el transporte de sus invitados no debería quitarle la emoción de disfrutar ese día.</p>
+      <p class="quote-line" data-i18n="wed.p2">Desde las llegadas al aeropuerto y los traslados a los hoteles hasta el transporte hacia la ceremonia y la recepción, le ayudamos a organizar las opciones de traslado de acuerdo con su itinerario.</p>
+      <p data-i18n="wed.p3">Ya sea una celebración íntima o una boda con muchos invitados, podemos revisar las necesidades de su grupo y las opciones disponibles.</p>
+      <a class="btn btn-primary" href="#cotizar" data-service="wedding" data-i18n="wed.btn">Cotizar transporte para mi boda</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOURS ================= -->
+<section class="bg-white" id="tours">
+  <div class="wrap">
+    <div class="split reverse">
+      <div class="photo wide reveal" data-photo="images/tours-1.jpg" data-label="FOTO · TOUR / PLAYA · 16:9"></div>
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="tours.eyebrow">Tours y experiencias en grupo</p>
+        <h2 data-i18n="tours.title">Que el trayecto también sea parte de la aventura.</h2>
+        <p class="lead" data-i18n="tours.p1">Los Cabos es mucho más que un lugar para hospedarse. Es un destino para descubrir, celebrar y disfrutar en compañía.</p>
+        <p data-i18n="tours.p2">¿Está planeando un día de playa, una excursión, un recorrido por la zona o una actividad para todo su grupo? Organice el transporte de acuerdo con sus planes y disfrute de una experiencia más sencilla de coordinar.</p>
+        <p data-i18n="tours.p3">Cuéntenos adónde quiere ir, cuántas personas viajarán y qué tiene en mente. Le ayudaremos a conocer las opciones disponibles.</p>
+        <a class="btn btn-primary" href="#cotizar" data-service="tours" data-i18n="tours.btn">Planear mi próxima aventura</a>
+      </div>
+    </div>
+
+    <h3 class="subhead reveal" data-i18n="tours.typesTitle">Experiencias en Los Cabos</h3>
+    <div class="tour-grid">
+      <article class="tour-card reveal">
+        <div class="photo" data-photo="images/tour-rzr.jpg" data-label="FOTO · RZR / CUATRIMOTO"></div>
+        <div class="tour-body">
+          <h4 data-i18n="t1.title">Aventura en RZR y cuatrimoto</h4>
+          <p data-i18n="t1.desc">Recorra el desierto y las dunas de Baja California Sur en una experiencia llena de adrenalina.</p>
+          <a class="text-link" href="#cotizar" data-service="tours" data-tour="t1.title" data-i18n="tours.cardBtn">Cotizar este tour</a>
+        </div>
+      </article>
+      <article class="tour-card reveal">
+        <div class="photo" data-photo="images/tour-camel.jpg" data-label="FOTO · PASEO EN CAMELLO"></div>
+        <div class="tour-body">
+          <h4 data-i18n="t2.title">Paseo en camello</h4>
+          <p data-i18n="t2.desc">Una experiencia única entre el desierto y la playa.</p>
+          <a class="text-link" href="#cotizar" data-service="tours" data-tour="t2.title" data-i18n="tours.cardBtn">Cotizar este tour</a>
+        </div>
+      </article>
+      <article class="tour-card reveal">
+        <div class="photo" data-photo="images/tour-yacht.jpg" data-label="FOTO · YATE DE LUJO"></div>
+        <div class="tour-body">
+          <h4 data-i18n="t3.title">Yates de lujo</h4>
+          <p data-i18n="t3.desc">Disfrute del mar con estilo y comodidad.</p>
+          <a class="text-link" href="#cotizar" data-service="tours" data-tour="t3.title" data-i18n="tours.cardBtn">Cotizar este tour</a>
+        </div>
+      </article>
+      <article class="tour-card reveal">
+        <div class="photo" data-photo="images/tour-glass-boat.jpg" data-label="FOTO · LANCHA TRANSPARENTE"></div>
+        <div class="tour-body">
+          <h4 data-i18n="t4.title">Lancha transparente al Arco</h4>
+          <p data-i18n="t4.desc">Descubra el fondo del mar mientras navega hacia el icónico Arco de Cabo San Lucas.</p>
+          <a class="text-link" href="#cotizar" data-service="tours" data-tour="t4.title" data-i18n="tours.cardBtn">Cotizar este tour</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUÉ ELEGIRNOS ================= -->
+<section class="dark navy" id="por-que">
+  <div class="wrap why-layout">
+    <div>
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="why.eyebrow">¿Por qué elegirnos?</p>
+        <h2 data-i18n="why.title">Transporte pensado para experiencias memorables.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <span class="icon"><svg><use href="#i-users"/></svg></span>
+          <h3 data-i18n="why.1t">Su grupo es lo más importante.</h3>
+          <p data-i18n="why.1d">Le ayudamos a encontrar una opción de transporte de acuerdo con el número de pasajeros, el destino y el itinerario de su viaje.</p>
+        </div>
+        <div class="why-item reveal">
+          <span class="icon"><svg><use href="#i-seat"/></svg></span>
+          <h3 data-i18n="why.2t">Comodidad durante el recorrido.</h3>
+          <p data-i18n="why.2d">Conozca nuestras opciones de SUVs, vans para pasajeros y transporte para grupos grandes.</p>
+        </div>
+        <div class="why-item reveal">
+          <span class="icon"><svg><use href="#i-calendar"/></svg></span>
+          <h3 data-i18n="why.3t">Un servicio para distintas ocasiones.</h3>
+          <p data-i18n="why.3d">Traslados al aeropuerto, hoteles, excursiones, bodas y eventos: organice las diferentes partes de su estancia con un mismo punto de contacto.</p>
+        </div>
+        <div class="why-item reveal">
+          <span class="icon"><svg><use href="#i-chat"/></svg></span>
+          <h3 data-i18n="why.4t">Una forma más sencilla de planear.</h3>
+          <p data-i18n="why.4d">Comparta los detalles de su viaje y solicite una cotización de acuerdo con el transporte que necesita.</p>
+        </div>
+      </div>
+      <a class="btn btn-accent reveal" href="#cotizar" data-i18n="why.btn">Cuéntenos sus planes</a>
+    </div>
+    <div class="photo tall reveal" data-photo="images/company.jpg" data-label="FOTO · EQUIPO / EMPRESA · 4:5"></div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS (rendered from reviews.js) ================= -->
+<section class="bg-cream" id="resenas">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="rev.eyebrow">Reseñas</p>
+      <h2 data-i18n="rev.title">Lo que dicen nuestros clientes.</h2>
+      <p class="lead" data-i18n="rev.intro">Opiniones de clientes en Google.</p>
+    </div>
+    <div class="reviews-grid" id="reviews-grid"></div>
+    <div class="center reviews-more">
+      <button class="btn btn-outline" type="button" id="reviews-more">Ver más reseñas</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CÓMO FUNCIONA ================= -->
+<section class="bg-white" id="como-funciona">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="how.eyebrow">¿Cómo funciona?</p>
+      <h2 data-i18n="how.title">Organice su transporte en tres sencillos pasos.</h2>
+    </div>
+    <div class="steps">
+      <span class="dash-line" aria-hidden="true"><span class="car"></span></span>
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3 data-i18n="how.1t">Cuéntenos qué necesita.</h3>
+        <p data-i18n="how.1d">Comparta las fechas, los puntos de salida y llegada, el número de pasajeros, el equipaje y el tipo de servicio que busca.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3 data-i18n="how.2t">Reciba su cotización.</h3>
+        <p data-i18n="how.2d">Revisaremos su solicitud y le informaremos sobre las opciones disponibles, los precios y las condiciones del servicio.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3 data-i18n="how.3t">Disfrute el recorrido.</h3>
+        <p data-i18n="how.3d">Una vez confirmada su reservación, podrá concentrarse en su viaje, su celebración o las personas con quienes lo compartirá.</p>
+      </div>
+    </div>
+    <div class="center reveal">
+      <a class="btn btn-whatsapp js-wa" href="https://wa.me/" target="_blank" rel="noopener">
+        <svg><use href="#i-wa"/></svg><span data-i18n="how.btn">Cotizar por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PREGUNTAS FRECUENTES ================= -->
+<section class="bg-cream" id="preguntas">
+  <div class="wrap faq-layout">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</p>
+      <h2 data-i18n="faq.title">Lo que necesita saber antes de reservar.</h2>
+      <p data-i18n="faq.intro">¿Tiene otra pregunta? Escríbanos por WhatsApp y con gusto le ayudamos.</p>
+      <a class="btn btn-whatsapp js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="faq.btn">Escríbanos por WhatsApp</span></a>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary data-i18n="faq.q1">¿Cómo solicito una cotización?</summary>
+        <p data-i18n="faq.a1">Complete el formulario de esta página o escríbanos por WhatsApp. Compártanos las fechas, los puntos de salida y llegada, el número de pasajeros, el equipaje y el tipo de servicio que busca, y le responderemos con las opciones disponibles.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">¿Ofrecen traslados desde el aeropuerto de San José del Cabo (SJD)?</summary>
+        <p data-i18n="faq.a2">Sí. Coordinamos traslados entre el aeropuerto y su hotel, resort, villa o alojamiento vacacional en Los Cabos. Al cotizar, compártanos su número de vuelo y su horario de llegada.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">¿Qué tipos de vehículos tienen?</summary>
+        <p data-i18n="faq.a3">Contamos con SUVs de lujo, vans para pasajeros y autobuses turísticos para grupos grandes. La capacidad final de pasajeros y equipaje se confirma al reservar.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">¿Pueden organizar el transporte de una boda o un evento?</summary>
+        <p data-i18n="faq.a4">Sí. Podemos coordinar las llegadas de sus invitados al aeropuerto, los traslados a los hoteles y el transporte hacia la ceremonia y la recepción. Cuéntenos su itinerario y revisaremos las opciones disponibles.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q5">¿Qué tours y actividades ofrecen?</summary>
+        <p data-i18n="faq.a5">Organizamos experiencias como aventuras en RZR y cuatrimoto, paseos en camello, yates de lujo y lancha transparente al Arco, además de transporte para excursiones, días de playa y recorridos por Los Cabos. Escríbanos para conocer la disponibilidad.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q6">¿En qué zonas ofrecen servicio?</summary>
+        <p data-i18n="faq.a6">Brindamos servicio en Los Cabos, incluyendo Cabo San Lucas y San José del Cabo. Si su destino está en otra parte de Baja California Sur, consúltenos.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq.q7">¿Con cuánta anticipación debo reservar?</summary>
+        <p data-i18n="faq.a7">Le recomendamos contactarnos en cuanto tenga sus fechas, especialmente para grupos, bodas y temporada alta. La disponibilidad y los precios se confirman al cotizar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LLAMADO FINAL + FORMULARIO ================= -->
+<section class="dark cta" id="cotizar">
+  <svg class="route-bg" viewBox="0 0 600 400" fill="none" aria-hidden="true">
+    <path d="M10 380 C 120 300, 80 180, 220 160 S 420 220, 470 110 S 560 30, 585 22" stroke="#00D3F3" stroke-width="2" stroke-dasharray="8 10"/>
+  </svg>
+  <div class="wrap cta-layout">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="cta.eyebrow">Solicite su cotización</p>
+      <h2 data-i18n="cta.title">Su gente. Sus planes. Su experiencia en Los Cabos.</h2>
+      <p class="lead" data-i18n="cta.p1">Ya sea que necesite un traslado al aeropuerto, una SUV privada, una van para su grupo o transporte para una boda de destino, estamos aquí para ayudarle a encontrar la opción adecuada.</p>
+      <p data-i18n="cta.p2">Cuéntenos qué está planeando. Empecemos por organizar cómo llegar.</p>
+      <div class="contact-line">
+        <span>WhatsApp</span>
+        <a class="js-wa" href="https://wa.me/" target="_blank" rel="noopener" data-i18n="faq.btn">Escríbanos por WhatsApp</a>
+      </div>
+    </div>
+
+    <form class="quote-form reveal" id="quote-form" novalidate>
+      <h3 data-i18n="form.title">Solicitar cotización</h3>
+      <div class="field">
+        <label for="f-name" data-i18n="form.name">Nombre</label>
+        <input id="f-name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-service" data-i18n="form.service">Servicio</label>
+        <select id="f-service" name="service">
+          <option value="airport" data-i18n="opt.airport">Traslado al aeropuerto</option>
+          <option value="hotel" data-i18n="opt.hotel">Transporte a hoteles y resorts</option>
+          <option value="groups" data-i18n="opt.groups">Transporte para grupos</option>
+          <option value="tours" data-i18n="opt.tours">Tours y excursiones</option>
+          <option value="wedding" data-i18n="opt.wedding">Boda o evento especial</option>
+          <option value="suv" data-i18n="opt.suv">SUV de lujo</option>
+          <option value="van" data-i18n="opt.van">Van para pasajeros</option>
+          <option value="bus" data-i18n="opt.bus">Autobús para grupos grandes</option>
+          <option value="other" data-i18n="opt.other">Otro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-date" data-i18n="form.date">Fecha</label>
+        <input id="f-date" name="date" type="date">
+      </div>
+      <div class="field">
+        <label for="f-pax" data-i18n="form.pax">Pasajeros</label>
+        <input id="f-pax" name="pax" type="number" min="1" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="f-from" data-i18n="form.from">Punto de salida</label>
+        <input id="f-from" name="from" data-i18n-ph="form.fromPh" placeholder="Aeropuerto SJD">
+      </div>
+      <div class="field">
+        <label for="f-to" data-i18n="form.to">Destino</label>
+        <input id="f-to" name="to" data-i18n-ph="form.toPh" placeholder="Hotel, villa o actividad">
+      </div>
+      <div class="field full">
+        <label for="f-notes" data-i18n="form.notes">Detalles</label>
+        <textarea id="f-notes" name="notes" data-i18n-ph="form.notesPh" placeholder="Número de vuelo, horario, equipaje, ocasión…"></textarea>
+      </div>
+      <button class="btn btn-whatsapp" type="submit"><svg><use href="#i-wa"/></svg><span data-i18n="form.submit">Solicitar cotización por WhatsApp</span></button>
+      <p class="form-note" data-i18n="form.note">Su solicitud se abrirá en WhatsApp lista para enviar.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= UBICACIÓN / MAPA ================= -->
+<section class="map-section" id="ubicacion">
+  <iframe
+    class="map-frame"
+    title="Mapa de Cabo San Lucas"
+    src="https://www.google.com/maps?q=Cabo%20San%20Lucas%2C%20B.C.S.%2C%20M%C3%A9xico&z=12&output=embed"
+    allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  <div class="wrap map-card-wrap">
+    <div class="map-card">
+      <span class="icon"><svg><use href="#i-pin"/></svg></span>
+      <p class="eyebrow" data-i18n="map.eyebrow">Ubicación</p>
+      <h3>Marea</h3>
+      <address>Cabo San Lucas, B.C.S., México</address>
+      <a class="btn btn-whatsapp js-wa" href="https://wa.me/" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-i18n="how.btn">Cotizar por WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.svg" alt="Marea">
+        <p data-i18n="footer.tagline">Transporte privado, servicio para grupos y tours en Los Cabos, Baja California Sur.</p>
+        <a class="fb-link" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg><use href="#i-fb"/></svg>
+        </a>
+      </div>
+      <div>
+        <h4 data-i18n="nav.services">Servicios</h4>
+        <ul>
+          <li><a href="#servicios" data-i18n="opt.airport">Traslado al aeropuerto</a></li>
+          <li><a href="#flota" data-i18n="tag.suv">SUVs de lujo</a></li>
+          <li><a href="#flota" data-i18n="tag.vans">Vans para grupos</a></li>
+          <li><a href="#bodas" data-i18n="footer.weddings">Bodas y eventos</a></li>
+          <li><a href="#tours" data-i18n="tag.tours">Tours y excursiones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="nav.contact">Contacto</h4>
+        <ul>
+          <li><a class="js-wa" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>Cabo San Lucas, B.C.S.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Marea. <span data-i18n="footer.sample">Sitio de muestra · marca ficticia.</span></span>
+      <span data-i18n="footer.credit">Sitio web por Florecer Digital</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg><use href="#i-wa"/></svg>
+</a>
+
+<script src="i18n.js"></script>
+<script src="reviews.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
